@@ -19,6 +19,10 @@ function renderFlashcards(flashcards) {
             <div class="card-back">${definition}</div>
         </div>
         `;
+        // Add event listener for flipping
+        card.addEventListener('click', () => {
+            card.querySelector('.card-inner').classList.toggle('flipped');
+        });
         cardContainer.appendChild(card);
     });
 }
