@@ -10,7 +10,10 @@
   <h1>记忆单词卡</h1>
   <button onclick="loadFromLocalStorage()">加载单词卡</button>
   <button onclick="clearFlashcards()">清空单词卡</button>
-  <input type="file" id="fileInput" accept=".xlsx" style="margin-top: 10px;" />
+  <div>
+    <input type="file" id="fileInput" accept=".xlsx" style="margin-top: 10px;" />
+  </div>
+  <div><a href="https://mauritiuschief.github.io/Mom-s-Flashcards/示例输入.xlsx" class="button">下载示例输入</a></div>
   <div class="card-container" id="cardContainer"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
